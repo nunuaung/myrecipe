@@ -1,0 +1,99 @@
+.wrapper{
+    padding: 20px;
+}
+.section_wrapper{
+    margin: 0 0 4rem 0;
+}
+.section_title{
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-gap: 2rem;
+}
+.mt_15{
+    margin-top: 15px;
+}
+nav{
+    padding: 20px 0;
+}
+nav .Logo{
+    font-size: 18px;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.detail_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.detail_wrapper .col{
+    flex: 1;
+    width: 50%;
+}
+.detail_wrapper .col:last-child{
+    padding-left: 20px;
+}
+.detail_wrapper .col img{
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+.detail_wrapper .col h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.detail_wrapper .detail_btn{
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    padding: 7px 12px;
+    margin: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.detail_wrapper .detail_btn.active{
+    background: #000;
+    color: #fff;
+}
+.detail_content{
+    margin-top: 30px;
+}
+.ingredient_list{
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px){
+    .detail_wrapper{
+        flex-direction: column;
+    }
+    .detail_wrapper .col{
+        width: 100%;
+    }
+    .detail_wrapper .col:last-child {
+        padding: 20px 0 0 0;
+    }
+}
+.sample_grid{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 50px 500px; */
+    gap: 20px;
+}
+.sample_grid .sample_card{
+    background: lime;
+    padding: 20px;
+    border: 1px solid yellow;
+}
+.sample_card:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
